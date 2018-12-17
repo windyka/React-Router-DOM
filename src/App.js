@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
+import Navbars from './component/Navbar'
 import Homes from './component/Home'
 
-class App extends Component {
+import {Route} from 'react-router-dom'
+
+class Apps extends Component {
   render() {
     return (
       <div>
-        <Homes />
+        <Navbars />
+        <Route path='/' exact component={Homes}/>
       </div>
     );
   }
 }
 
-export default App;
+export default Apps
